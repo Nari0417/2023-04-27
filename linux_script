@@ -12,3 +12,26 @@ echo "Invalid user"
 fi
 
 ========================================================================
+
+
+#! /bin/bash
+echo "Enter your lucky number"
+read n
+if [[ ($n -eq 100) ]] ;
+then
+echo "you got 1st prize"
+elif [[ ($n -eq 50) ]] ;
+then
+echo "you got 2nd prize" 
+elif [[ ($n -eq 20) ]] ;
+then
+echo "you got 3rd prize" 
+else 
+echo "sorry try again latter"
+fi
+
+=============================================================================
+
+
+
+
