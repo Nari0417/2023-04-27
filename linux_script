@@ -30,7 +30,14 @@ else
 echo "sorry try again latter"
 fi
 
-=============================================================================
+==============================print your name multile times===============================================
+
+i#!/bin/bash
+echo "Enter your Good name"
+read name
+for i in {1..10}; do
+echo "Erripuka $name"
+done
 
 
 
