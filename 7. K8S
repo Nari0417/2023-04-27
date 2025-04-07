@@ -55,6 +55,8 @@ DRAWBACKS:
 
 HISTORY:
 1  ll
+kubectl apply -f your-manifest-file.yaml --dry-run=client
+
     2  mkdir k8s
     3  cd k8s/
     4  vim minikube.sh
