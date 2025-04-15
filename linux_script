@@ -59,7 +59,37 @@ done
 
 This will print the names of all files and directories in the current directory.
 ==========================================================================================================
+🔢 Integer Comparison Operators (used with test or [ ])
+Operator | Meaning | Example
+-eq | Equal to | [ "$a" -eq "$b" ]
+-ne | Not equal to | [ "$a" -ne "$b" ]
+-lt | Less than | [ "$a" -lt "$b" ]
+-le | Less than or equal to | [ "$a" -le "$b" ]
+-gt | Greater than | [ "$a" -gt "$b" ]
+-ge | Greater than or equal to | [ "$a" -ge "$b" ]
 
+-------------------------------------------------------------------
+🔤 String Comparison Operators
+Operator | Meaning | Example
+= | Equal to | [ "$str1" = "$str2" ]
+!= | Not equal to | [ "$str1" != "$str2" ]
+< | Less than (lexical order) | [ "$str1" \< "$str2" ]
+> | Greater than (lexical order) | [ "$str1" \> "$str2" ]
+-z | String is null (empty) | [ -z "$str" ]
+-n | String is not null (not empty) | [ -n "$str" ]
+-------------------------------------------------------------------
+📁 File Test Operators
+
+Operator | Meaning
+-e | File exists
+-f | File exists and is a regular file
+-d | File exists and is a directory
+-r | File is readable
+-w | File is writable
+-x | File is executable
+-s | File is not empty
+-L | File is a symbolic link
+-------------------------------------------------------------------
 -eq: Equal
 -ne: Not equal
 -lt: Less than
