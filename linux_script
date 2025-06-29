@@ -122,16 +122,13 @@ do
   echo "YourName"
   i=$((i + 1))
 done
-==
+===========================================================================================================
 #!/bin/bash
-
 # First command
 chage -M 180 nari
-
 # Check if the first command was successful
 if [ $? -eq 0 ]; then
     echo "Password expiry updated successfully."
-
     # Second command
     chage -W 7 nari
     echo "Warning days set to 7."
